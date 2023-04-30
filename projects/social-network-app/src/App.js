@@ -1,25 +1,12 @@
+import Header from './components/Header.jsx';
 import './App.css';
+import Nav from './components/Nav.jsx';
 
 function App() {
   return (
     <div className="app-wrapper">
-      <aside className="aside">
-        <div>
-          <a>Profile</a>
-        </div>
-        <div>
-          <a>Messages</a>
-        </div>
-        <div>
-          <a>News</a>
-        </div>
-        <div>
-          <a>Music</a>
-        </div>
-        <div>
-          <a>Settings</a>
-        </div>
-      </aside>
+      <Header />
+      <Nav />
       <main className="main"></main>
     </div>
   );
