@@ -1,4 +1,4 @@
-const Nav = () => {
+const Navbar = () => {
   return (
     <aside className="aside">
       <div>
@@ -20,4 +20,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
