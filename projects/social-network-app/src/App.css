@@ -4,22 +4,3 @@
   grid-template-rows: 50px 1fr;
   grid-template-columns: 2fr 10fr;
 }
-
-.header {
-  grid-area: header;
-  background: #d55845;
-}
-
-.header img {
-  height: 40px;
-}
-
-.aside {
-  grid-area: aside;
-  background: #f2f3f7;
-}
-
-.main {
-  grid-area: main;
-  background: #dfdede;
-}
