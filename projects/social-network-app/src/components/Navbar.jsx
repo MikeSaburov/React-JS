@@ -1,8 +1,8 @@
-import './Navbar.css';
+import s from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <aside className="aside">
+    <aside className={s.aside}>
       <div>
         <a>Profile</a>
       </div>
