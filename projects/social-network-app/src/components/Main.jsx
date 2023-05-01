@@ -1,7 +1,7 @@
-import './Main.css';
+import s from './Main.module.css';
 
 const Main = () => {
-  return <main className="main"></main>;
+  return <main className={s.main}></main>;
 };
 
 export default Main;
