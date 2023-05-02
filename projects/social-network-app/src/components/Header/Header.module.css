@@ -3,11 +3,11 @@
   background: #d55845;
 }
 
-/* .image_block {
+.image_block {
   width: 100px;
   display: grid;
   place-items: center;
-} */
+}
 
 .header img {
   height: 50px;
