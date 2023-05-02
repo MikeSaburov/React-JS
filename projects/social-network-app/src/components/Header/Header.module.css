@@ -3,6 +3,15 @@
   background: #d55845;
 }
 
+/* .image_block {
+  width: 100px;
+  display: grid;
+  place-items: center;
+} */
+
 .header img {
-  height: 40px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
