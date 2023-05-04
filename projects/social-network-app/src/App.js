@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -12,8 +12,10 @@ function App() {
         <Header />
         <Navbar />
         <div className="app-wrapper-content">
-          <Routes component={Dialogs} />
-          <Routes component={Profile} />
+          <Routes>
+            <Route path="/dialogs" element={<Dialogs />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
         </div>
       </div>
     </BrowserRouter>

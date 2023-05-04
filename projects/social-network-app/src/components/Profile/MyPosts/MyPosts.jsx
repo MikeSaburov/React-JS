@@ -4,6 +4,10 @@ import Post from './Post/Post';
 const MyPosts = () => {
   return (
     <div>
+      <img
+        src="https://www.freewebheaders.com/wp-content/gallery/space-size-800x200/night-planets-header-8825-header-banner_size-800x200.jpg"
+        alt=""
+      />
       <h2>My Posts</h2>
       <div className="addPost">
         <textarea name="" id="" cols="30" rows="5"></textarea>
