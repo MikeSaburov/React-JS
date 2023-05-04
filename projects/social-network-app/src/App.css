@@ -2,7 +2,12 @@
   display: grid;
   max-width: 960px;
   margin: 0 auto;
-  grid-template-areas: 'header header' 'aside main';
+  grid-template-areas: 'header header' 'aside content';
   grid-template-rows: 100px 1fr;
   grid-template-columns: 2fr 10fr;
+}
+
+.app-wrapper-content {
+  grid-area: content;
+  background: #dfdede;
 }
