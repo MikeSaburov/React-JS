@@ -12,3 +12,7 @@ a {
 .aside a:hover {
   text-decoration: underline;
 }
+
+.active-link {
+  color: rgb(5, 138, 5);
+}
