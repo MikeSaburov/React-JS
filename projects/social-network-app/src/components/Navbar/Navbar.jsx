@@ -5,19 +5,44 @@ const Navbar = () => {
   return (
     <aside className={s.aside}>
       <div>
-        <NavLink to="/profile">Profile</NavLink>
+        <NavLink
+          to="/profile"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Profile
+        </NavLink>
       </div>
       <div>
-        <NavLink to="/dialogs">Messages</NavLink>
+        <NavLink
+          to="/dialogs"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Messages
+        </NavLink>
       </div>
       <div>
-        <NavLink to="/news">News</NavLink>
+        <NavLink
+          to="/news"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          News
+        </NavLink>
       </div>
       <div>
-        <NavLink to="/music">Music</NavLink>
+        <NavLink
+          to="/music"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Music
+        </NavLink>
       </div>
       <div>
-        <NavLink to="settings">Settings</NavLink>
+        <NavLink
+          to="settings"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Settings
+        </NavLink>
       </div>
     </aside>
   );

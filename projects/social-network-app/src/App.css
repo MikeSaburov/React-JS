@@ -12,6 +12,11 @@
   background: #dfdede;
 }
 
+/* Стиль для активной ссылки  */
 .active {
   color: blue;
+}
+
+.active-link {
+  color: rgb(5, 138, 5);
 }
