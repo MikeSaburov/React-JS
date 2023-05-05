@@ -1,23 +1,23 @@
 import s from './Navbar.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <aside className={s.aside}>
       <div>
-        <Link to="/profile">Profile</Link>
+        <NavLink to="/profile">Profile</NavLink>
       </div>
       <div>
-        <Link to="/dialogs">Messages</Link>
+        <NavLink to="/dialogs">Messages</NavLink>
       </div>
       <div>
-        <Link to="/news">News</Link>
+        <NavLink to="/news">News</NavLink>
       </div>
       <div>
-        <Link to="/music">Music</Link>
+        <NavLink to="/music">Music</NavLink>
       </div>
       <div>
-        <Link to="settings">Settings</Link>
+        <NavLink to="settings">Settings</NavLink>
       </div>
     </aside>
   );

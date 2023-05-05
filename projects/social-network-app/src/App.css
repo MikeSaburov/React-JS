@@ -11,3 +11,7 @@
   grid-area: content;
   background: #dfdede;
 }
+
+.active {
+  color: blue;
+}
