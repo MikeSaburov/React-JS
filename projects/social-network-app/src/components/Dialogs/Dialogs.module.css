@@ -3,8 +3,8 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.dialog {
-}
+/* .dialog {
+} */
 .dialogsItems {
   border-right: 1px solid red;
   padding: 10px;
@@ -17,5 +17,5 @@
   padding: 10px;
 }
 
-.message {
-}
+/* .message {
+} */
