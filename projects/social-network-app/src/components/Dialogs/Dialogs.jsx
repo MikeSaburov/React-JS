@@ -4,7 +4,7 @@ const Dialogs = () => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        <div className={s.dialog}>MIke</div>
+        <div className={`${s.dialog} ${s.active}`}>MIke</div>
         <div className={s.dialog}>Goga</div>
         <div className={s.dialog}>Rome</div>
         <div className={s.dialog}>Artem</div>

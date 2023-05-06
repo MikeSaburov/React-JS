@@ -7,8 +7,14 @@
 }
 .dialogsItems {
   border-right: 1px solid red;
+  padding: 10px;
 }
+.dialogsItems .active {
+  color: rgb(5, 138, 5);
+}
+
 .messagesItems {
+  padding: 10px;
 }
 
 .message {
