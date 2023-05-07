@@ -12,6 +12,9 @@
 .dialogsItems .active {
   color: rgb(5, 138, 5);
 }
+.dialogsItems a:hover {
+  text-decoration: underline;
+}
 
 .messagesItems {
   padding: 10px;

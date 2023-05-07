@@ -1,19 +1,23 @@
 import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
 
+const Dialog = (props) => {
+  return (
+    <div className={`${s.dialog} ${s.active}`}>
+      <NavLink to={'/dialogs/' + props.id}>{props.name}</NavLink>
+    </div>
+  );
+};
+
 const Dialogs = () => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/1">MIke</NavLink>{' '}
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/2">Goga</NavLink>
-        </div>
-        <div className={s.dialog}>Roma</div>
-        <div className={s.dialog}>Artem</div>
-        <div className={s.dialog}>Vadik</div>
+        <Dialog name="Mike" id="1"></Dialog>
+        <Dialog name="Goga" id="2"></Dialog>
+        <Dialog name="Roma" id="3"></Dialog>
+        <Dialog name="Artem" id="4"></Dialog>
+        <Dialog name="Vadik" id="5"></Dialog>
       </div>
       <div className={s.messagesItems}>
         <div className={s.messages}>Hi</div>
