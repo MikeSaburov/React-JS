@@ -17,16 +17,16 @@ const Dialogs = () => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        <DialogItem name="Mike" id="1"></DialogItem>
-        <DialogItem name="Goga" id="2"></DialogItem>
-        <DialogItem name="Roma" id="3"></DialogItem>
-        <DialogItem name="Artem" id="4"></DialogItem>
-        <DialogItem name="Vadik" id="5"></DialogItem>
+        <DialogItem name="Mike" id="1" />
+        <DialogItem name="Goga" id="2" />
+        <DialogItem name="Roma" id="3" />
+        <DialogItem name="Artem" id="4" />
+        <DialogItem name="Vadik" id="5" />
       </div>
       <div className={s.messagesItems}>
-        <Message message="Hi props !!!"></Message>
-        <Message message="How are you ?"></Message>
-        <Message message="This is React baby!"></Message>
+        <Message message="Hi props!!!" />
+        <Message message="How are you?" />
+        <Message message="This is React baby!" />
       </div>
     </div>
   );
