@@ -3,11 +3,12 @@ import Post from './Post/Post';
 
 const MyPosts = () => {
   return (
-    <div className={s.posts}>
+    <div className={s.postsBlock}>
       <h2>New Post</h2>
       <textarea name="" id="" cols="30" rows="5"></textarea>
       <br />
       <button>Add Post</button>
+      <hr />
       <Post
         message="JavaScript сохранил статус самого популярного языка программирования на GitHub в текущем году. Весь топ-5 языков остался неизменным с прошлого года, но PHP уступил шестую строчку – ее занял C++."
         image="https://cs2.livemaster.ru/storage/3f/d1/b8020a152d3e02369b20a82e53uh--materialy-dlya-tvorchestva-avatarka.jpg"
