@@ -39,7 +39,6 @@ const Dialogs = () => {
         <Message message={messagesData[0].message} />
         <Message message={messagesData[1].message} />
       </div>
-      ы
     </div>
   );
 };
