@@ -24,16 +24,8 @@ const MyPosts = () => {
       <br />
       <button>Add Post</button>
       <hr />
-      <Post
-        message={postsData[0].message}
-        image="https://cs2.livemaster.ru/storage/3f/d1/b8020a152d3e02369b20a82e53uh--materialy-dlya-tvorchestva-avatarka.jpg"
-        likeCount={postsData[0].likeCount}
-      />
-      <Post
-        message={postsData[1].message}
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyGzxYWrj2oU2vzckVxaD2IBCfvkzDh59XeQkf4RKHnUtbyAc-y789T3l8KKrTMhYfQs&usqp=CAU"
-        likeCount={postsData[1].likeCount}
-      />
+      <Post message={postsData[0].message} likeCount={postsData[0].likeCount} />
+      <Post message={postsData[1].message} likeCount={postsData[1].likeCount} />
     </div>
   );
 };
