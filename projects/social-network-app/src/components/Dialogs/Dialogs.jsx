@@ -32,16 +32,12 @@ const Dialogs = () => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        <DialogItem name="Mike" id="1" />
-        <DialogItem name="Goga" id="2" />
-        <DialogItem name="Roma" id="3" />
-        <DialogItem name="Artem" id="4" />
-        <DialogItem name="Vadik" id="5" />
+        <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
+        <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
       </div>
       <div className={s.messagesItems}>
-        <Message message="Hi props!!!" />
-        <Message message="How are you?" />
-        <Message message="This is React baby!" />
+        <Message message={messageData[0].message} />
+        <Message message={messageData[1].message} />
       </div>
     </div>
   );
