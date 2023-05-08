@@ -22,6 +22,12 @@ let dialogsData = [
   { id: '6', name: 'Igor' },
 ];
 
+let messageData = [
+  { id: '1', message: 'Hi props!!!' },
+  { id: '2', message: 'How are you?' },
+  { id: '3', message: 'This is React baby!' },
+];
+
 const Dialogs = () => {
   return (
     <div className={s.dialogs}>
