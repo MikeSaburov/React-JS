@@ -13,6 +13,15 @@ const Message = (props) => {
   return <div className={s.messages}>{props.message}</div>;
 };
 
+let dialogsData = [
+  { id: '1', name: 'Mike' },
+  { id: '2', name: 'Goga' },
+  { id: '3', name: 'Roma' },
+  { id: '4', name: 'Artem' },
+  { id: '5', name: 'Vadik' },
+  { id: '6', name: 'Igor' },
+];
+
 const Dialogs = () => {
   return (
     <div className={s.dialogs}>
