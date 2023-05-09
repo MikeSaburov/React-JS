@@ -29,13 +29,11 @@ let messagesData = [
   { id: '3', message: 'This is React baby!' },
 ];
 
-let dialogsElemes = dialogsData.map((d) => {
-  return <DialogItem name={d.name} id={d.id} />;
-});
+let dialogsElemes = dialogsData.map((d) => (
+  <DialogItem name={d.name} id={d.id} />
+));
 
-let messageElements = messagesData.map((m) => {
-  return <Message message={m.message} />;
-});
+let messageElements = messagesData.map((m) => <Message message={m.message} />);
 
 const Dialogs = () => {
   return (
