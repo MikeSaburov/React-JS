@@ -10,8 +10,10 @@
 .app-wrapper-content {
   grid-area: content;
   background: #dfdede;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-
 /* Стиль для активной ссылки  */
 /* .active {
   color: blue;
