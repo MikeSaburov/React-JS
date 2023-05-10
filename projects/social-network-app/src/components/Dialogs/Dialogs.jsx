@@ -1,9 +1,6 @@
-import DialogItem from './DialogItem/DialogItem';
+import DialogItems from './DialogItems/DialogItems';
+import Messages from './Messages/Messages';
 import s from './Dialogs.module.css';
-
-const Message = (props) => {
-  return <div className={s.messages}>{props.message}</div>;
-};
 
 let dialogsData = [
   { id: '1', name: 'Mike' },
@@ -22,16 +19,16 @@ let messagesData = [
 ];
 
 let dialogsElemes = dialogsData.map((d) => (
-  <DialogItem name={d.name} id={d.id} />
+  <DialogItems name={d.name} id={d.id} />
 ));
 
-let messageElements = messagesData.map((m) => <Message message={m.message} />);
+let messageElements = messagesData.map((m) => <Messages message={m.message} />);
 
 const Dialogs = () => {
   return (
     <div className={s.dialogs}>
-      {dialogsElemes}
-      <div className={s.messagesItems}>{messageElements}</div>
+      <div> {dialogsElemes}</div>
+      <div> {messageElements}</div>
     </div>
   );
 };
