@@ -27,8 +27,8 @@ let messageElements = messagesData.map((m) => <Message message={m.message} />);
 const Dialogs = () => {
   return (
     <div className={s.dialogs}>
-      <div> {dialogsElemes}</div>
-      <div> {messageElements}</div>
+      <div className={s.dialogsItems}> {dialogsElemes}</div>
+      <div className={s.messages}> {messageElements}</div>
     </div>
   );
 };
