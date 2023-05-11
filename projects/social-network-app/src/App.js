@@ -22,7 +22,7 @@ function App(props) {
                 <Dialogs dialog={props.dialogs} message={props.message} />
               }
             />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile posts={props.posts} />} />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
             <Route path="/settings" element={<Settings />} />
