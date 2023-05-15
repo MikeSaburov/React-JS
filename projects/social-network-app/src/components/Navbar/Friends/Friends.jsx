@@ -1,7 +1,11 @@
-import s from './Navbar.module.css';
+import s from './Friends.module.css';
 
-const Friends = () => {
-  return <div></div>;
+const Friends = (props) => {
+  return (
+    <div>
+      <img className={s.image} src={props.src} alt="" />
+    </div>
+  );
 };
 
 export default Friends;

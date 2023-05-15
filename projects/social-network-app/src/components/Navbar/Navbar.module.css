@@ -21,3 +21,10 @@ a {
 .activeLink {
   color: rgb(5, 138, 5);
 }
+
+.avaBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,7 +1,11 @@
 import s from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
+import Friends from './Friends/Friends';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  let frindsElement = props.localState.friends.map((i) => (
+    <Friends src={i.src} />
+  ));
   return (
     <aside className={s.aside}>
       <div className={s.item}>
@@ -45,7 +49,10 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className={s.friendsBlock}></div>
+      <div>
+        <h1>Friends</h1>
+        <div className={s.avaBlock}> {frindsElement}</div>
+      </div>
     </aside>
   );
 };
