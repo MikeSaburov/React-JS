@@ -13,7 +13,7 @@ function App(props) {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar />
+        <Navbar localState={props.appState.navbarPage} />
         <div className="app-wrapper-content">
           <Routes>
             <Route

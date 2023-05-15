@@ -44,6 +44,8 @@ const Navbar = () => {
           Settings
         </NavLink>
       </div>
+
+      <div className={s.friendsBlock}></div>
     </aside>
   );
 };
