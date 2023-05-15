@@ -47,7 +47,7 @@ let state = {
       {
         id: '3',
         name: 'Roma',
-        src: 'https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676295972133291028.png',
+        src: 'https://kartinkived.ru/wp-content/uploads/2021/12/avatarka-dlya-vatsapa-kot-v-kapyushone-s-raznym-czvetom-glaz.jpg',
       },
       {
         id: '4',
@@ -58,6 +58,22 @@ let state = {
         id: '5',
         name: 'Vadik',
         src: 'https://static-cse.canva.com/blob/1051719/1600w-2so4RyuRmfc.jpg',
+      },
+    ],
+  },
+  navbarPage: {
+    friends: [
+      {
+        id: 1,
+        src: 'https://kartinkived.ru/wp-content/uploads/2021/12/avatarka-dlya-vatsapa-krasivaya-panda.jpg',
+      },
+      {
+        id: 2,
+        src: 'https://shapka-youtube.ru/wp-content/uploads/2020/05/gangsta-skull.jpg',
+      },
+      {
+        id: 3,
+        src: 'https://www.meme-arsenal.com/memes/581e1833e4b43d7fd6d4d672ab64d43c.jpg',
       },
     ],
   },
