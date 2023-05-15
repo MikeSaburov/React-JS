@@ -4,7 +4,7 @@ import Friends from './Friends/Friends';
 
 const Navbar = (props) => {
   let frindsElement = props.localState.friends.map((i) => (
-    <Friends src={i.src} />
+    <Friends src={i.src} name={i.name} />
   ));
   return (
     <aside className={s.aside}>

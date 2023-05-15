@@ -8,3 +8,10 @@ h1 {
   height: 40px;
   border-radius: 50%;
 }
+
+p {
+  color: rgb(5, 138, 5);
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
