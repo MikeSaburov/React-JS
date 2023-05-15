@@ -34,13 +34,31 @@ let state = {
       { id: '3', message: 'This is React baby!' },
     ],
     dialogs: [
-      { id: '1', name: 'Mike' },
-      { id: '2', name: 'Goga' },
-      { id: '3', name: 'Roma' },
-      { id: '4', name: 'Artem' },
-      { id: '5', name: 'Vadik' },
-      { id: '6', name: 'Igor' },
-      { id: '7', name: 'Ivan' },
+      {
+        id: '1',
+        name: 'Mike',
+        src: 'https://shapka-youtube.ru/wp-content/uploads/2021/02/prikolnaya-avatarka-dlya-patsanov.jpg',
+      },
+      {
+        id: '2',
+        name: 'Goga',
+        src: 'https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676295806139337963.png',
+      },
+      {
+        id: '3',
+        name: 'Roma',
+        src: 'https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676295972133291028.png',
+      },
+      {
+        id: '4',
+        name: 'Artem',
+        src: 'https://whatsism.com/uploads/posts/2018-07/1530546770_rmk_vdjbx10.jpg',
+      },
+      {
+        id: '5',
+        name: 'Vadik',
+        src: 'https://static-cse.canva.com/blob/1051719/1600w-2so4RyuRmfc.jpg',
+      },
     ],
   },
 };
