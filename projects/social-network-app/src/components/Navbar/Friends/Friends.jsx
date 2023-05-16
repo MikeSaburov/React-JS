@@ -4,7 +4,7 @@ const Friends = (props) => {
   return (
     <div>
       <img className={s.image} src={props.src} alt="" />
-      <p>{props.name}</p>
+      <p className={s.friendsName}>{props.name}</p>
     </div>
   );
 };

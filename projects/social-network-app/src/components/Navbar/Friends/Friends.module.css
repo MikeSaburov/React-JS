@@ -9,7 +9,7 @@ h1 {
   border-radius: 50%;
 }
 
-p {
+.friendsName {
   color: rgb(5, 138, 5);
   font-size: 12px;
   text-align: center;
