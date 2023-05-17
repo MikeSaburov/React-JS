@@ -2,8 +2,7 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = (props) => {
-  let posts = props.posts;
-  let postsElements = posts.map((p) => (
+  let postsElements = props.posts.map((p) => (
     <Post message={p.message} likeCount={p.likeCount} />
   ));
 
@@ -12,7 +11,7 @@ const MyPosts = (props) => {
       <h2>New Post</h2>
       <textarea name="" id="" cols="30" rows="5"></textarea>
       <br />
-      <button>Add Post</button>
+      <button onClick={() => {}}>Add Post</button>
       <hr />
       {postsElements}
     </div>
