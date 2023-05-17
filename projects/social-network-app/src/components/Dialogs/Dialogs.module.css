@@ -8,3 +8,8 @@
 
 /* .message {
 } */
+.addMessageBlock {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
