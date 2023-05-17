@@ -6,12 +6,15 @@ const MyPosts = (props) => {
     <Post message={p.message} likeCount={p.likeCount} />
   ));
 
+  let click = () => {
+    alert('You click button');
+  };
   return (
     <div className={s.postsBlock}>
       <h2>New Post</h2>
       <textarea name="" id="" cols="30" rows="5"></textarea>
       <br />
-      <button onClick={() => {}}>Add Post</button>
+      <button onClick={click}>Add Post</button>
       <hr />
       {postsElements}
     </div>
