@@ -1,16 +1,24 @@
+import React from 'react';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 import s from './Dialogs.module.css';
 
 const Dialogs = (props) => {
-  let dialogs = props.localState.dialogs;
-  let messages = props.localState.messages;
-
-  let dialogsElemes = dialogs.map((d) => (
+  let dialogsElemes = props.localState.dialogs.map((d) => (
     <DialogItem name={d.name} id={d.id} img={d.src} />
   ));
 
-  let messageElements = messages.map((m) => <Message message={m.message} />);
+  let messageElements = props.localState.messages.map((m) => (
+    <Message message={m.message} />
+  ));
+
+  let textMessage = React.createRef();
+
+  let addMessage = () => {
+    let messageValue = textMessage.current.value;
+
+    alert(messageValue);
+  };
 
   return (
     <div className={s.dialogs}>
@@ -18,8 +26,13 @@ const Dialogs = (props) => {
       <div>
         <div>{messageElements}</div>
         <div className={s.addMessageBlock}>
-          <textarea name="message" cols="50" rows="2"></textarea>
-          <button>Add</button>
+          <textarea
+            ref={textMessage}
+            name="message"
+            cols="50"
+            rows="2"
+          ></textarea>
+          <button onClick={addMessage}>Add</button>
         </div>
       </div>
     </div>
