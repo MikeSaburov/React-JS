@@ -82,7 +82,7 @@ let state = {
   },
 };
 
-let addPost = (valuePost) => {
+export let addPost = (valuePost) => {
   let newPost = {
     id: 5,
     message: valuePost,
