@@ -82,4 +82,14 @@ let state = {
   },
 };
 
+let addPost = (valuePost) => {
+  let newPost = {
+    id: 5,
+    message: valuePost,
+    likeCount: 0,
+  };
+
+  state.profilePage.posts.push(newPost);
+};
+
 export default state;
