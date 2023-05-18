@@ -32,7 +32,7 @@ const Dialogs = (props) => {
             cols="50"
             rows="2"
           ></textarea>
-          <button onClick={addMessage}>Add</button>
+          <button onClick={addMessage}>Send</button>
         </div>
       </div>
     </div>
