@@ -28,6 +28,7 @@ let state = {
         likeCount: 485,
       },
     ],
+    newPostText: '',
   },
   dialogPage: {
     messages: [
@@ -84,15 +85,23 @@ let state = {
   },
 };
 
-export let addPost = (valuePost) => {
+window.state = state;
+
+export let addPost = () => {
   let newPost = {
     id: 5,
-    message: valuePost,
+    message: state.profilePage.newPostText,
     likeCount: 0,
   };
 
   state.profilePage.posts.push(newPost);
+  state.profilePage.newPostTex = '';
   rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
+  // rerenderEntireTree(state);
 };
 
 export default state;

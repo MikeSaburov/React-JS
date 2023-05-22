@@ -24,8 +24,10 @@ function App(props) {
               path="/profile"
               element={
                 <Profile
-                  localState={props.appState.profilePage}
+                  profileState={props.appState.profilePage}
                   addPost={props.addPost}
+                  newPostText={props.appState.profilePage.newPostText}
+                  updateNewPostText={props.updateNewPostText}
                 />
               }
             />
