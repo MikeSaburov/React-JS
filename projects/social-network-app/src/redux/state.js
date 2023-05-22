@@ -63,6 +63,7 @@ let state = {
         src: 'https://static-cse.canva.com/blob/1051719/1600w-2so4RyuRmfc.jpg',
       },
     ],
+    newMessageText: '',
   },
   navbarPage: {
     friends: [
@@ -85,13 +86,10 @@ let state = {
   },
 };
 
-window.state = state;
-
 export let addPost = () => {
   let newPost = {
     id: 5,
     message: state.profilePage.newPostText,
-    likeCount: 0,
   };
 
   state.profilePage.posts.push(newPost);
@@ -102,6 +100,22 @@ export let addPost = () => {
 export let updateNewPostText = (newText) => {
   state.profilePage.newPostText = newText;
   // rerenderEntireTree(state);
+};
+
+export let addMessage = () => {
+  let newMessage = {
+    id: 4,
+    message: state.dialogPage.newMessageText,
+  };
+
+  state.dialogPage.messages.push(newMessage);
+  state.profilePage.newMessage = '';
+  rerenderEntireTree(state);
+};
+
+export let updateNewMessageText = (newMessage) => {
+  state.dialogPage.newMessageText = newMessage;
+  //rerenderEntireTree(state);
 };
 
 export default state;

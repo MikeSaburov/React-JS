@@ -7,9 +7,9 @@ const Message = (props) => {
         <div className={s.messageLeft}>{props.message}</div>
       </div>
 
-      <div className={s.rightBlock}>
+      {/* <div className={s.rightBlock}>
         <div className={s.messageRight}>{props.message}</div>
-      </div>
+      </div> */}
     </div>
   );
 };
