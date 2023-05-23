@@ -90,6 +90,7 @@ export const addPost = () => {
   let newPost = {
     id: 5,
     message: state.profilePage.newPostText,
+    likeCount: 0,
   };
 
   state.profilePage.posts.push(newPost);
