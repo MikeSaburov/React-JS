@@ -91,20 +91,6 @@ let store = {
   getState() {
     return this._state;
   },
-  // addPost() {
-  //   let newPost = {
-  //     id: 5,
-  //     message: this._state.profilePage.newPostText,
-  //     likeCount: 0,
-  //   };
-
-  //   this._state.profilePage.posts.push(newPost);
-  //   this._state.profilePage.newPostTex = '';
-  //   this.rerenderEntireTree(this._state);
-  // },
-  // updateNewPostText(newText) {
-  //   this._state.profilePage.newPostText = newText;
-  // },
   addMessage() {
     let newMessage = {
       id: 4,
