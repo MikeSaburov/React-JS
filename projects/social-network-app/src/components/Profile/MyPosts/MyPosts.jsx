@@ -8,6 +8,13 @@ let addPostActionCreator = () => {
   };
 };
 
+let updatePostTextActionCreator = (text) => {
+  return {
+    type: 'UPDATE-POST-TEXT',
+    newText: text,
+  };
+};
+
 const MyPosts = (props) => {
   let postsElements = props.posts.map((p) => (
     <Post message={p.message} likeCount={p.likeCount} />
@@ -21,8 +28,8 @@ const MyPosts = (props) => {
 
   let onChange = () => {
     let text = newPostElement.current.value;
-    let action = { type: 'UPDATE-POST-TEXT', newText: text };
-    props.dispatch(action);
+
+    props.dispatch(updatePostTextActionCreator(text));
   };
 
   return (
