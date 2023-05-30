@@ -15,7 +15,8 @@ const MyPosts = (props) => {
 
   let onChange = () => {
     let text = newPostElement.current.value;
-    props.dispatch({ type: 'UPDATE-POST-TEXT', newText: text });
+    let action = { type: 'UPDATE-POST-TEXT', newText: text };
+    props.dispatch(action);
   };
 
   return (
