@@ -91,21 +91,20 @@ let store = {
   getState() {
     return this._state;
   },
-  addPost() {
-    debugger;
-    let newPost = {
-      id: 5,
-      message: this._state.profilePage.newPostText,
-      likeCount: 0,
-    };
+  // addPost() {
+  //   let newPost = {
+  //     id: 5,
+  //     message: this._state.profilePage.newPostText,
+  //     likeCount: 0,
+  //   };
 
-    this._state.profilePage.posts.push(newPost);
-    this._state.profilePage.newPostTex = '';
-    this.rerenderEntireTree(this._state);
-  },
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText;
-  },
+  //   this._state.profilePage.posts.push(newPost);
+  //   this._state.profilePage.newPostTex = '';
+  //   this.rerenderEntireTree(this._state);
+  // },
+  // updateNewPostText(newText) {
+  //   this._state.profilePage.newPostText = newText;
+  // },
   addMessage() {
     let newMessage = {
       id: 4,
@@ -121,6 +120,22 @@ let store = {
   },
   subscribe(observer) {
     this.rerenderEntireTree = observer;
+  },
+
+  dispatch(action) {
+    if (action.type === 'ADD-POST') {
+      let newPost = {
+        id: 5,
+        message: this._state.profilePage.newPostText,
+        likeCount: 0,
+      };
+
+      this._state.profilePage.posts.push(newPost);
+      this._state.profilePage.newPostTex = '';
+      this.rerenderEntireTree(this._state);
+    } else if (action.type === 'UPDATE-POST-TEXT') {
+      this._state.profilePage.newPostText = action.newText;
+    }
   },
 };
 
