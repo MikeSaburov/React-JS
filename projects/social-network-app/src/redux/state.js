@@ -125,6 +125,19 @@ let store = {
   },
 };
 
+export const addPostActionCreator = () => {
+  return {
+    type: 'ADD-POST',
+  };
+};
+
+export const updatePostTextActionCreator = (text) => {
+  return {
+    type: 'UPDATE-POST-TEXT',
+    newText: text,
+  };
+};
+
 // let rerenderEntireTree;
 
 // let state = {
