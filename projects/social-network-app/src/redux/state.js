@@ -96,19 +96,7 @@ let store = {
   getState() {
     return this._state;
   },
-  addMessage() {
-    let newMessage = {
-      id: 4,
-      message: this._state.dialogPage.newMessageText,
-    };
 
-    this._state.dialogPage.messages.push(newMessage);
-    this._state.profilePage.newMessage = '';
-    this.rerenderEntireTree(this._state);
-  },
-  // updateNewMessageText(newMessage) {
-  //   this._state.dialogPage.newMessageText = newMessage;
-  // },
   subscribe(observer) {
     this.rerenderEntireTree = observer;
   },
