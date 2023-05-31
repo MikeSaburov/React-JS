@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
 let store = {
   rerenderEntireTree() {
@@ -120,10 +121,12 @@ let store = {
       };
 
       this._state.profilePage.posts.push(newPost);
-      this._state.profilePage.newPostTex = '';
+      this._state.profilePage.newPostText = '';
       this.rerenderEntireTree(this._state);
     } else if (action.type === UPDATE_POST_TEXT) {
       this._state.profilePage.newPostText = action.newText;
+    } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
+      this._state.dialogPage.newMessageText = action.newMessage;
     }
   },
 };
