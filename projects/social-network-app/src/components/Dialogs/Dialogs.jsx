@@ -4,7 +4,7 @@ import Message from './Message/Message';
 import s from './Dialogs.module.css';
 
 const Dialogs = (props) => {
-  let dialogsElemes = props.localState.dialogs.map((d) => (
+  let dialogsElements = props.localState.dialogs.map((d) => (
     <DialogItem name={d.name} id={d.id} img={d.src} />
   ));
 
@@ -24,7 +24,7 @@ const Dialogs = (props) => {
   };
   return (
     <div className={s.dialogs}>
-      <div> {dialogsElemes}</div>
+      <div> {dialogsElements}</div>
       <div>
         <div>{messageElements}</div>
         <div className={s.addMessageBlock}>
