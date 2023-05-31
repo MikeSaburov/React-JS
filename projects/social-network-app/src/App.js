@@ -21,9 +21,7 @@ function App(props) {
               element={
                 <Dialogs
                   localState={props.appState.dialogPage}
-                  addMessage={props.addMessage}
-                  newMessageText={props.appState.dialogPage.newMessageText}
-                  updateNewMessageText={props.updateNewMessageText}
+                  dispatch={props.dispatch}
                 />
               }
             />

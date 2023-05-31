@@ -1,6 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+const ADD_MESSAGE = 'ADD-MESSAGE';
 
 let store = {
   rerenderEntireTree() {
@@ -105,9 +106,9 @@ let store = {
     this._state.profilePage.newMessage = '';
     this.rerenderEntireTree(this._state);
   },
-  updateNewMessageText(newMessage) {
-    this._state.dialogPage.newMessageText = newMessage;
-  },
+  // updateNewMessageText(newMessage) {
+  //   this._state.dialogPage.newMessageText = newMessage;
+  // },
   subscribe(observer) {
     this.rerenderEntireTree = observer;
   },
@@ -127,6 +128,15 @@ let store = {
       this._state.profilePage.newPostText = action.newText;
     } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
       this._state.dialogPage.newMessageText = action.newMessage;
+    } else if (action.type === ADD_MESSAGE) {
+      let newMessage = {
+        id: 4,
+        message: this._state.dialogPage.newMessageText,
+      };
+
+      this._state.dialogPage.messages.push(newMessage);
+      this._state.profilePage.newMessage = '';
+      this.rerenderEntireTree(this._state);
     }
   },
 };
@@ -142,5 +152,7 @@ export const updateMessageTextActionCreator = (text) => ({
   type: UPDATE_NEW_MESSAGE_TEXT,
   newMessage: text,
 });
+
+export const addMessageActionCreator = () => ({ type: ADD_MESSAGE });
 
 export default store;
