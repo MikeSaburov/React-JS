@@ -136,11 +136,11 @@ export const updatePostTextActionCreator = (text) => ({
   newText: text,
 });
 
-export const updateMessageTextActionCreator = (text) => ({
+export const updateMessageTextCreator = (text) => ({
   type: UPDATE_NEW_MESSAGE_TEXT,
   newMessage: text,
 });
 
-export const addMessageActionCreator = () => ({ type: ADD_MESSAGE });
+export const addMessageCreator = () => ({ type: ADD_MESSAGE });
 
 export default store;
