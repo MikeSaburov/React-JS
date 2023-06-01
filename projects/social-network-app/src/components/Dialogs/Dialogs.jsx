@@ -19,8 +19,8 @@ const Dialogs = (props) => {
     props.dispatch(addMessageCreator());
   };
 
-  let onChangeMessage = () => {
-    let messageValue = textMessage.current.value;
+  let onChangeMessage = (e) => {
+    let messageValue = e.target.value;
     props.dispatch(updateMessageTextCreator(messageValue));
   };
   return (
