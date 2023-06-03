@@ -3,7 +3,7 @@ import dialogsReducer from './dialogs-reducer';
 import navbarReducer from './navbar-reducer';
 
 let store = {
-  rerenderEntireTree() {
+  _callSubscriber() {
     console.log('store update');
   },
   _state: {
@@ -97,14 +97,14 @@ let store = {
   },
 
   subscribe(observer) {
-    this.rerenderEntireTree = observer;
+    this._callSubscriber = observer;
   },
 
   dispatch(action) {
     this._state.profilePage = pofileReducer(this._state.profilePage, action);
     this._state.dialogPage = dialogsReducer(this._state.dialogPage, action);
     this._state.navbarPage = navbarReducer(this._state.navbarPage, action);
-    this.rerenderEntireTree(this._state);
+    this._callSubscriber(this._state);
   },
 };
 
