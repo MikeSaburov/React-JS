@@ -2,19 +2,22 @@ const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 const ADD_MESSAGE = 'ADD-MESSAGE';
 
 const dialogsReducer = (state, action) => {
-  if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-    state.newMessageText = action.newMessage;
-  } else if (action.type === ADD_MESSAGE) {
-    let newMessage = {
-      id: 4,
-      message: state.newMessageText,
-    };
+  switch (action.type) {
+    case UPDATE_NEW_MESSAGE_TEXT:
+      state.newMessageText = action.newMessage;
+      return state;
+    case ADD_MESSAGE:
+      let newMessage = {
+        id: 4,
+        message: state.newMessageText,
+      };
 
-    state.messages.push(newMessage);
-    state.newMessage = '';
+      state.messages.push(newMessage);
+      state.newMessage = '';
+      return state;
+    default:
+      return state;
   }
-
-  return state;
 };
 
 export default dialogsReducer;
