@@ -21,4 +21,11 @@ const pofileReducer = (state, action) => {
   }
 };
 
+export const addPostActionCreator = () => ({ type: ADD_POST });
+
+export const updatePostTextActionCreator = (text) => ({
+  type: UPDATE_POST_TEXT,
+  newText: text,
+});
+
 export default pofileReducer;
