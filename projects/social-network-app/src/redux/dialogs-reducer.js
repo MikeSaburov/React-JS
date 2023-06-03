@@ -1,3 +1,3 @@
-const dialogsReducer = (state, action) => {
+const navbareducer = (state, action) => {
   return state;
 };
