@@ -1,3 +1,3 @@
-const pofileReducer = (state, action) => {
+const navbarReducer = (state, action) => {
   return state;
 };
