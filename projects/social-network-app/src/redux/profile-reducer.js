@@ -17,3 +17,5 @@ const pofileReducer = (state, action) => {
 
   return state;
 };
+
+export default pofileReducer;
