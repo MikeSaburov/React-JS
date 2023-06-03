@@ -2,11 +2,6 @@ import pofileReducer from './profile-reducer';
 import dialogsReducer from './dialogs-reducer';
 import navbarReducer from './navbar-reducer';
 
-const ADD_POST = 'ADD-POST';
-const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
-const ADD_MESSAGE = 'ADD-MESSAGE';
-
 let store = {
   rerenderEntireTree() {
     console.log('store update');
