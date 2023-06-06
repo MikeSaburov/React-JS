@@ -20,6 +20,7 @@ const Dialogs = (props) => {
 
   let addMessage = () => {
     props.dispatch(addMessageCreator());
+    textMessage.current.value = '';
   };
 
   let onChangeMessage = (e) => {
