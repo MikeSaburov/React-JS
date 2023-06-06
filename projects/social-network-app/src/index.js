@@ -13,8 +13,9 @@ import App from './App';
 // } from './redux/state';
 
 // import { subscribe } from './redux/state';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 let rerenderEntireTree = (state) => {
-  const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <App appState={store.getState()} dispatch={store.dispatch.bind(store)} />
