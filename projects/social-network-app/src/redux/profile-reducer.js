@@ -11,7 +11,7 @@ const pofileReducer = (state, action) => {
       };
 
       state.posts.push(newPost);
-      state.newPostText = '';
+
       return state;
     case UPDATE_POST_TEXT:
       state.newPostText = action.newText;

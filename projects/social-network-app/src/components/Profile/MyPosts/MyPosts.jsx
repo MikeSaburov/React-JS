@@ -15,11 +15,11 @@ const MyPosts = (props) => {
 
   let addPost = () => {
     props.dispatch(addPostActionCreator());
+    newPostElement.current.value = '';
   };
 
   let onChange = () => {
     let text = newPostElement.current.value;
-
     props.dispatch(updatePostTextActionCreator(text));
   };
 
