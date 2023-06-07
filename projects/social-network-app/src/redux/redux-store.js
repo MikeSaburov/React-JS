@@ -5,9 +5,9 @@ import navbarReducer from './navbar-reducer';
 
 let redusers = combineReducers({
   // здесь необходимо понимать что ключ это то что хранится в state, а значение это тот reducer который за этот state отвечает
-  pofileReducer,
-  dialogsReducer,
-  navbarReducer,
+  profilePage: pofileReducer,
+  dialogPage: dialogsReducer,
+  navbarPage: navbarReducer,
 });
 
 let store = createStore();
