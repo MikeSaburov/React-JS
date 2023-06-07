@@ -10,6 +10,6 @@ let redusers = combineReducers({
   navbarPage: navbarReducer,
 });
 
-let store = createStore();
+let store = createStore(redusers); //Отдали все редъюсеры стору!!!(крутяк)
 
 export default store;
