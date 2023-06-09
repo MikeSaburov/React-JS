@@ -5,6 +5,7 @@ import {
   addPostActionCreator,
   updatePostTextActionCreator,
 } from '../../../redux/profile-reducer';
+import MyPosts from './MyPosts';
 
 const MyPostsContainer = (props) => {
   let postsElements = props.posts.map((p) => (
@@ -18,21 +19,12 @@ const MyPostsContainer = (props) => {
     newPostElement.current.value = '';
   };
 
-  let onChange = () => {
-    let text = newPostElement.current.value;
-    props.dispatch(updatePostTextActionCreator(text));
+  let onChange = (text) => {
+    let action = updatePostTextActionCreator(text);
+    props.dispatch(action);
   };
 
-  return (
-    <div className={s.postsBlock}>
-      <h2>New Post</h2>
-      <textarea ref={newPostElement} onChange={onChange}></textarea>
-      <br />
-      <button onClick={addPost}>Add Post</button>
-      <hr />
-      {postsElements}
-    </div>
-  );
+  return <MyPosts updateNewPostText={onChange} addPost={addPost} />;
 };
 
 export default MyPostsContainer;
